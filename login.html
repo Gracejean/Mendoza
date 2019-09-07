@@ -3,59 +3,45 @@
         <title>Sample Login page</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href = "login.css"/>
-        <script src="login.js"></script>
+        
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
 
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="scripts/login.js"></script>
     </head>
-    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
-            <a class="navbar-brand" href="#" style="background-image: url('logo.png')"></a>
-          
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link" href="#" id="signup" onclick="signup()">Sign up</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#" id="signin" onclick="login()">Log in</a>
-              </li>
-          
-    </nav>
 
-    <body>
-        <centered>
-            <div class="box" id="1stpage">
-                    <input type="button" class = "btn" id="signup" value="Sign up" onclick="signup()">
-                    <input type="button" class = "btn" id="signin" value="Log in" onclick="login()">
-            </div>
-        </centered>
-        
-        <div class="container" id="form" style="visibility: hidden;">
+    <body>        
+        <div class="container" id="form">
             <div class="main">
-                <form class="form" method="POST" action="#">
+                <form class="form" method="POST" action="">
                     <h1>Log in page</h1>
                     <label>Email : </label>
-                    <input class = "fa"     type = "text" name = "email" id = "email">
+                    <input type = "email" name = "email" id = "email" required>
                     <label>Password : </label>
-                    <input type = "password" name = "password" id = "password">
-                    <input type = "button" id = "login" value = "Login" onclick="submit()">
+                    <input type = "password" name = "password" id = "password" required>
+                    <input type = "button" id = "login" value = "Login">
+                    <p id="one"><a href="#">Forgot Password ?</a></p>
+                    <p id="two">Don't have account? <a class="signup" href="#" id="signup">Sign up here</a></p>
                 </form>
             </div>
         </div>
-        <div class="signuppage" id="sign_up" style="visibility: hidden;">
+        <div class="signuppage" id="sign_up">
             <div class="main1">
-                <form class="form" method="POST" action="#">
+                <form class="form" method="POST" action="">
                     <h1>Sign up page</h1>
                     <label>Firstname : </label>
                     <input type="text" name="firstname" id="firstname" required>
                     <label>Lastname : </label>
                     <input type="text" name="lastname" id="lastname" required>
                     <label>Email : </label>
-                    <input class = "fa"     type = "text" name = "email" id = "email">
+                    <input type = "email" name = "signemail" id = "email">
                     <label>Password : </label>
-                    <input type = "password" name = "password" id = "password1" required>
+                    <input type = "password" name = "password" id = "signpassword" required>
                     <label>Confirm password : </label>
                     <input type="password" name="password" id="confirmpassword" required>
-                    <input type = "button" id = "register" value = "Sign up" onclick="valid()">
+                    <input type = "button" id = "register" value = "Sign up">
                 </form>
             </div>
         </div>

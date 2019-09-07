@@ -1,0 +1,25 @@
+{
+  "name": "mendoza",
+  "version": "1.0.0",
+  "description": "Creating LOgin",
+  "main": "login.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Gracejean/Mendoza.git"
+  },
+  "author": "jeanilyn",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Gracejean/Mendoza/issues"
+  },
+  "homepage": "https://github.com/Gracejean/Mendoza#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "jquery": "^3.4.1"
+  }
+}
